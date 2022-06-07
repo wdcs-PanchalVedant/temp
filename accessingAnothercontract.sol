@@ -48,7 +48,8 @@ contract ContractB {
     }
 }
 
-// Call Method Actually Calls Method Of Contract And delegatedcall Inherits That Method And Change In State Variable Will Reflect on Caller Contract State Variables.
+// Call Method Actually Calls Method Of Contract And delegatedcall Inherits (Just Example Not Actually Inherits) That Method And Change In State Variable Will Reflect on Caller Contract State Variables.
+// In Delegated Call State Of Caller Chnager As Per Slot Num.
 contract ContractA {
     // If We Put Any Varibale Here So delegated Call Will Not Change tokenName State Variable.
     string public tokenName = "FunToken"; // In Delegated Call Order Of Variables Sholud Same.
